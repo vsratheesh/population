@@ -1,4 +1,4 @@
-<div class="col-md-6" id="result-league">
+<!-- <div class="col-md-6" id="result-league">
 <div class="container-fluid slot">
   <h3><center>Census Data</center></h3>
 </div>
@@ -13,4 +13,32 @@
        </tbody>
      </table>
    </div>
- </div>
+ </div> -->
+
+<div class="container">
+  <div class="row">
+        
+        <p class="lead">Population</p>
+        Country:
+    <!-- Our Special dropdown has class show-on-hover -->
+        <div class="btn-group show-on-hover">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          Country <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li ng-repeat = "n in hc.govtResponse"><a href="#"> {{n.country}} </a></li>
+          </ul>
+        </div>
+
+        Year:
+        <!-- Single button -->
+        <div class="btn-group show-on-hover">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          Year <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">{{n.Year}}</a></li>
+            </ul>
+        </div>
+  </div>
+</div>

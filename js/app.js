@@ -14,8 +14,8 @@ angularApp.config(function ($routeProvider,$httpProvider){
 
 angularApp.controller('HomeController',['$resource',function($resource){
 	var vm=this;
-	var govtResource = $resource('http://api.census.gov/data/timeseries/idb/1year?get=AREA_KM2,NAME,AGE,POP&FIPS=IN&time=2012&SEX=0');
-	vm.govtResponse= govtResource.query();
+	var govtResource = $resource('http://api.census.gov/data/timeseries/idb/1year?get=AREA_KM2,NAME,AGE,POP');
+	vm.govtResponse= govtResource.query({FIPS:'IN',time:'2012',SEX:'0'});
 	console.log(vm.govtResponse);
 }]);
 
