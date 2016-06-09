@@ -1,20 +1,22 @@
 #img{
-	background-image: url("../img/img.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74) ),url("../img/img.jpg");
 	opacity: 0.9;
 	filter: alpha(opacity=40);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
 	background-attachment: fixed;
+} 
 }
-.show-on-hover:hover > ul.dropdown-menu {
-	display: block;    
+.navbar-fixed-top{ border: transparent;
+	background: transparent;
 }
 .navbar-default {
-    background: transparent;
-    border: transparent;
+	background: transparent;
+	border: transparent;
 }
 body{
 	padding-top: 70px;
 	font-size: 22px;
+	color: black;
 }
